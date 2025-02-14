@@ -17,11 +17,13 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61
-    - setuptools-scm >=8
+    - setuptools <68
+    - setuptools-scm <8
+    - tomli
     - pip
   run:
     - python >={{ python_min }}
+    - pytest ==7.1.2
     - pydash >=7.0.3
     - pydantic ==1.10.17
     - pytz ==2024.2
@@ -40,7 +42,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://kyleloomis.com/articles/financial-instrument-library
+  home: https://github.com/kyleloomis/finstruments
   summary: Financial instrument definitions built with Python and Pydantic
   license: MIT
   license_file: LICENSE
