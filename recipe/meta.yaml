@@ -1,5 +1,5 @@
 {% set name = "finstruments" %}
-{% set version = "1.0.9" %}
+{% set version = "1.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/finstruments-{{ version }}.tar.gz
-  sha256: 7578c21af81ad5df6e8326e11ae9142c17f8956d67bcc6b3ad4c60a3a3395c95
+  sha256: aa8b8e114a1bce4e31b45de54c732ec461aba9a46f23a2b5b3d5c57f7544782a
 
 build:
   noarch: python
